@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelopicoludopata</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Pauta 1.4 Interlineados y separación de mas de 150px entre párrafos. Hago 151px de gap en el CSS-->
+</head>
+
+<body>
+    <div class="container">
+    <header>
+        <img src="/web Accesibilitat/img/logogogo-removebg-preview.png" alt="Logo de la asociación de ludopatas y Zoofilicos. Ruleta de casino con el titulo de la asociación">
+        <!-- Pauta 1.1 - Utilizar texto alternativo para el logo. Explico brevemente que se encuentra en la imagen -->
+        <nav>
+            <ul>
+        <!-- Pauta 1.4 Contraste de texto bajo, dificultad de lectura en textos. Fuerzo cambiando el color de los items de navegación en el CSS -->
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#informacion">Información</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#mapa">Mapa del Sitio</a></li>
+        <!-- Pauta 3.2 Error al orden del contenido de manera lógica. No doy disponibilidad de tener una accesibilidad, ya sea con un menú sticky o un boton que te permita llegar hasta arriba -->    
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bienvenidos a nuestra asociación</h2>
+            <p>Somos una organización dedicada a ayudar a las personas con problemas de ludopatía y el furrismo.</p>
+            <!-- Pauta 3.3 Error de terminología, uso de palabras de difícil comprensión. Utilizo furrismo, concepto que no conoce la mayoría -->
+        </section>
+
+        <section id="informacion">
+            <h2>Información</h2>
+            <p>Aquí puedes encontrar información sobre los servicios que ofrecemos.</p>
+            <!-- Pauta 1.4 - Texto que supere mas de 80 carácteres de ancho -->
+        </section>
+
+        <section id="galeria">
+            <h2>Galería de Imágenes</h2>
+            <div class="gallery">
+                <!-- Pauta 2.2 Error de temporizar el tiempo de ver las fotos. Fuerzo ocultar las imagenes para crear dificultad a la hora de visibilizarlas -->
+                <img src="/web Accesibilitat/img/ludopatia.jpg" alt="Imagen 1">
+                <img src="/web Accesibilitat/img/ruptura.jpg" alt="Imagen 2">
+                <img src="/web Accesibilitat/img/Zoofilia.jpg" alt="Imagen 3">
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+            <!-- Pauta 3.3 Instrucciones claras de que hay que poner en cada campo. En este caso rompo el form y pongo en cada atributo cosas abstractas para liar al usuario -->
+                <label for="nombre">hola:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">jajaja:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensaje">que hay que poner aqui?:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <button type="submit">Cuando lo envio?</button>
+            </form>
+            <!-- Pauta 2.3 No tener automatizado un mensaje de confirmación del comentario enviado hace que el usuario no tenga idea de si lo ha enviado o no. -->
+        </section>
+
+        <!-- Pauta 2.4 Enlaces y/o estructura no siguen un orden. He puesto contacto más arriba de mapa. -->
+
+        <section id="mapa">
+            <h2>Mapa del Sitio</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11943.1523238921!2d2.09595245!3d41.5521855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a494fafa1c6f51%3A0xedb09e2c559f46a4!2sHotel%20Catalonia%20Sabadell!5e0!3m2!1sca!2ses!4v1715672215700!5m2!1sca!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Aquí nos encontramos!</p>
+        </section>
+    </main>
+
+    <footer>
+            <h3>Información de Contacto</h3>
+            <p>Correo electrónico: </p> <p class="correo">info@pelopicoludopatas.org</p> 
+            <p>Teléfono: </p> <p class="telefono">+34 652.462.781</p>
+        <!-- Pauta 1.1 - Empleo Color en el CSS a la hora de utilizar links y/o información relevante para crear un contraste que ayude al usuario -->
+    </footer>
+    </div>
+</body>
+
+</html>

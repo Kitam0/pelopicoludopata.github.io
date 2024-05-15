@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 151px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #333;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 30%;
+    margin: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div {
+    width: 45%;
+}
+
+footer h3 {
+    margin-top: 0;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 5px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    text-align: center;
+    line-height: 3.5em;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+iframe:focus {
+    outline: none;
+  }
+  
+  iframe[seamless] {
+    display: block;
+  }
+
+#mapa {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+#galeria {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+#informacion {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 400px;
+}
+
+#informacion p{
+    word-wrap: break-word; /* permito que el texto pete en palabras */
+}
+
+#inicio {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+#contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+header img{
+    width: 100px;
+}
+
+.correo:hover{
+    background-color: green;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.telefono:hover{
+    background-color: green;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#galeria img {
+    width: 300px; 
+    height: auto;
+    animation: desaparecer 1s forwards; 
+}
+
+
+@keyframes desaparecer {
+    0% {
+        opacity: 1; 
+    }
+    100% {
+        opacity: 0; 
+        display: none; 
+    }
+}
+
+nav ul li a {
+    color: rgb(77, 77, 77);
+}
